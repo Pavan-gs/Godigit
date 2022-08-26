@@ -1,0 +1,210 @@
+Cloud Service Providers
+-------------------------------
+
+1. Google Cloud, Microsoft Azure, AWS, IBM Cloud, Digital Ocean
+
+2. Deployment Models : Public Cloud, Private Cloud & Hybrid cloud
+
+1. Public Cloud : Applications &  storage is available to public over the internet
+
+2. Private Cloud : 
+
+3. Hybrid :   
+
+
+Saas : Data is managed by the user. Application, OS, Virtualisation, Servers, Storage, Networking, Middleware, Runtime
+
+Paas : Data,  Application is managed by the user.  Virtualisation, Servers, Storage, Networking, OS.
+
+Iaas :  Data,  Application, Middleware, Runtime, OS is managed by the user.  Virtualisation, Servers, Storage, Networking.
+
+# Compute Services : EC2, Beanstalk, Lambda
+
+# Instance : Virtual Server 
+
+# EC2 : Resizable computing services on AWS Cloud
+
+# Types of Instances : General Purpose Instance, Compute instances, Memory Instances, GPU Instances
+
+# Pricing models : On-demand, Dedicated, On-spot, Reserved
+
+# Burstable Instances, EBS , Cluster networking, Dedicated
+
+# Amazon S3 
+
+# S3 data transfer accelaration
+
+# Versioning
+
+# Bucket Policy
+
+Hadoop
+
+1. Hdfs commands
+
+2. Mapper.py
+
+3. Reducer.py
+
+4. Hadoop jat streaming lib mapper reducer input output
+
+5. Hive --> HQL --> SQL --> Creating tables(internal and external) / Partition / buckets --> Loading tables --> Joins
+
+Spark
+
+6. Spark SQL --> Sql commands by creating a temp view, spark context, spark session, RDD, Rdd to df, df to RDD, Hive as RDD
+
+7. Spark ML --> Present all input vars as one column
+
+8. Spark Streaming --> Spark Streaming Context, Kafka/flume
+
+# AWS Networking Services
+-------------------------------------
+
+# VPC   :--> Virtual Network to launch AWS resources. Helps to connect your infras/data center to Cloud resources. Isolated network to launch AWS instances
+
+# Direct Connect :--> Leased line to directly connect to the AWS infrastructure
+
+# Route 53 :--> Domain Name System
+
+# IAM : Identity & Access Management. Secured way of controlling the access to the AWS services for the Users. 
+
+# AWS Database Services 
+
+# SQL : Structured data, Schema on write
+# NoSQL : Handling Unstructured data, Schema on read, Columnar DB's (Cassandra, HBase), Document DB(MongoDB), Graph DB(Neo4j)
+
+RDS : Relational DB, Handles structured data
+
+Dynamo DB : Nosql, Document DB, Key-value pairs, Unstructured Data
+
+Elastic DB : In-memory cache
+
+Aurora : Belongs to the RDS class, MySQL compatible
+
+Redshift : Data warehousing solution (analytics & reporting)
+
+# Sagemaker --> New notebook instance, assigned the role, picked a needed instance(computation)
+
+# Athena , glue --> BI solutions
+
+
+Managed DB Services : High Availability, OS, OS patches, Rack & stack, HVAC, Power, Back-ups, Scale, Maintanance(AWS), APP optimization(User)
+
+RDS :  3 types of storage, Magnetic, provisioned Iops, general purpose
+
+Regions : 
+
+Availability Zones
+
+Read Replicas
+
+Backup & restore
+
+Automatic back-up --> Gets deleted when a db instance is deleted
+
+Manual back-up --> Snapshot of back-up remains after the instance is deleted as well
+
+Dynamo DB
+----------------
+
+Records are called Items
+
+TTL --> Delete items
+
+# AWS Redshift
+---------------------
+Parallel
+column-0riented
+Data Lake
+
+# Compute Services : Creating EC2 instances, VPC --> Subnets, Internet Gateways, NAT Gateways
+# S3 : Creating buckets
+# D/B : RDS, Dynamo DB, Redshift [query]+ SQL Workbench --> and load data from S3 to Redshift
+
+# To Establish connection between SQL workbench and Redshift 
+	1. Create a cluster
+	2. Connect to database and check connection
+	3. Assign approate IAM role (Access to S3, read/write access to Redshift)
+	4. Ensure the inbound rules are set to allow connection outside VPC (TCP)
+	5. Copy the JDBC/ODBC url
+	7. In the SQL workbench, configure the path of the driver/.jar file of jdbc
+	8. Connect to a new profile
+	9. Injest the data from S3 to Redshift using SQL workbench
+	10.Keep the ARN of the Role which gives access to S3 with you in -order to copy the files from S3 and query the tables
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

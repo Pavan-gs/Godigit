@@ -1,0 +1,78 @@
+Elastic Block Service --> SSD like C/D/E drives. An instance has to be connected to it. Otherwise very good
+
+Elastic File System --> SSD like C/D/E drives,  Shared file system and not attached to perticular instance or OS
+
+S3 Glacier --> Store Archived data (When you don't want to use it often)
+
+The data is locked for certain time. It takes a while to retrieve the data
+
+AWS storage gateway --> To move the data from one env to another (Like a middleware) and also keep a copy of the data locally
+
+Snowball --> Data import/export system, also a hardware to copy the data into Aws and to move to another env later
+
+S3 --> Data is scalable , durable as checksum is used, flexible 
+
+Running applications, delivering contents to customer, hosting hightraffic websites, or backing up  emails and other files require  a lot of storage.
+
+Buckets & Objects
+
+Buckets --> Containers
+Objects --> Meta data --> Data with key & Version ID
+
+Storage Classes
+---------------------
+
+Standard--> Low Latency, Fast, Shorter duration
+Infrequent Access--> Retrivel speed is good & longer duration
+Glacier--> High latency & longer duration
+
+Versioning --> Enable versioning, prevents accidental deletion of buckets
+
+Cross Region Replication --> 
+
+Properties --> Transfer Accelaration
+
+Permissions --> ACL, Bucket Policy --> * for deletion, /* after ARN	
+
+Bucket --> Properties --> Static Website Hosting
+
+RDS
+------
+
+Select mysql db
+Dev/Test mysql
+General purpose
+db name
+create db
+Snapshots --> Backups
+Create read replica 
+read replica source
+read replica identifier
+Reserved instances --> 
+
+Limitation is it doesn't allow the access to the underlying OS on top of which this d/b engine is installed. So if it's Linux, you can't get the ssh access  of the ec2 instance if it is windows you'll not get the windows console.
+as the service is vanished.  If your need is access at the operating system level, then rds doesn't suit.
+
+DNS endpoint is used as host info on ur sql clients.
+
+Dynamo db --> Fully managed nosql 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

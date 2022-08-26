@@ -1,0 +1,162 @@
+1. Supervised Learning
+
+Linear models      --> Linear & logistic regression, polinomial linear regression
+Non-linear models  --> exponential,square root, logorithm, CART, SVM, KNN
+Ensemble models --> Bagging (Random Forest) , Boosting (XGBOOST)
+
+1. Linear Regression  (Sklearn & Statsmodel)
+
+OLS --> Line of best fit
+Intercept
+Co-eeficients
+Errors
+Loss/cost function
+
+Assumptions
+-------------------
+
+ Check the distribution of the data
+
+ All x vars should have a linear relationship with Y variable
+
+ Avoid multi-collinearity [X vars themselves shouldn't have high correlation)
+
+ The residual/errors of the model should be normally distributed
+
+ Summary of the model
+-----------------------------------
+
+ Coeffiecients, P-value
+ R2 & adjusted R2--> Goodness of fit of the model
+
+ Root mean squared error --> To find the difference between actual & predicted values
+
+ Decision tree regressor
+----------------------------------
+Conditition based model
+For a range of x values it creates a decision boundary (for a range of x values average of y is taken)
+Split criteria --> MSE
+
+Easy to interpret, unaffected by outliers, Generalised values
+
+ Ensemble --> RF/XGB
+------------------------------
+Group of models
+
+Handling outliers
+Using Categorical x vars --> dummy vars
+
+Classification
+------------------
+
+Logistic regression --> Maximum likelihood
+
+Probabilistic model --> binomial
+
+Logit function
+Inverse logit function --> Sigmoid
+
+ROCR/AUC
+
+Confusion matrix
+Precision
+Accuracy
+Recall
+F1-score
+
+Goodness of fit  -->  NULL Deviance, Residual deviance
+
+Decision Tree Classifier
+-------------------------------
+
+ Split criteria --> Gini,  Entropy&Information gain, Chisquare
+
+ Pruning --> CCP alpha
+
+ Hyper paramet tuning --> Max_depth, min_sample_leaf, max_leaf
+
+ Grid Search CV
+
+Random Forest
+XGB
+
+ Data Preparation Techniques
+-----------------------------------------
+
+Data transformations 
+-----------------------------
+standardisation --> xi-mean(x)/std(x)  [Scaling]
+
+Center xi-mean(x)
+Scale  xi/std(x)
+
+Normalisation --> (xi-min(x))/(min(x)-max(x))
+
+Sampling --> KFold CV
+
+Feature selection techniques --> Kbest,chisquare,rfe,auc
+Dimensionity reduction/feature extraction --> PCA
+Class imbalance --> under sampling, over sampling, SMOTE
+
+Evaluation of algorithms
+
+
+Unsupervised ML
+------------------------
+
+ Clustering --> Kmeans, Hierarchical, K-medoids
+
+ Kmeans
+------------
+
+ Euclidean Distance
+ Elbow
+ Groupby and summary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
